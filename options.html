@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Data Inserter Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      color: #4a90e2;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    
+    .section {
+      margin-bottom: 30px;
+    }
+    
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input, select {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    button:hover {
+      background-color: #3a80d2;
+    }
+    
+    .profiles-container {
+      margin-top: 20px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 10px;
+    }
+    
+    th {
+      background-color: #f5f5f5;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .status {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    
+    .success {
+      background-color: rgba(92, 184, 92, 0.2);
+      color: #3c763d;
+    }
+    
+    .error {
+      background-color: rgba(217, 83, 79, 0.2);
+      color: #a94442;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Data Inserter Options</h1>
+  
+  <div class="section">
+    <h2>Profiles</h2>
+    <p>Manage your saved profiles for data insertion.</p>
+    
+    <div class="profiles-container">
+      <table id="profilesTable">
+        <thead>
+          <tr>
+            <th>Profile Name</th>
+            <th>ID Type</th>
+            <th>Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Profiles will be loaded here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Import/Export Profiles</h2>
+    <p>Back up your profiles or import them from another device.</p>
+    
+    <div class="form-group">
+      <button id="exportBtn">Export All Profiles</button>
+      <button id="importBtn">Import Profiles</button>
+      <input type="file" id="importFile" style="display: none;" accept=".json">
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Default Settings</h2>
+    <p>Configure default behavior of the extension.</p>
+    
+    <div class="form-group">
+      <label for="defaultNationality">Default Nationality:</label>
+      <input type="text" id="defaultNationality" placeholder="e.g. España">
+    </div>
+    
+    <div class="form-group">
+      <label for="defaultGender">Default Gender:</label>
+      <select id="defaultGender">
+        <option value="Hombre">Male</option>
+        <option value="Mujer">Female</option>
+      </select>
+    </div>
+    
+    <button id="saveDefaultsBtn">Save Default Settings</button>
+  </div>
+  
+  <div class="section">
+    <h2>About</h2>
+    <p>Form Data Inserter v1.0</p>
+    <p>A Chrome extension to help you quickly fill web forms with generated or saved data.</p>
+  </div>
+  
+  <div class="status" id="statusMessage"></div>
+  
+  <script src="options.js"></script>
+</body>
+</html> 

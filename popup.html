@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Inserter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Data Inserter</h1>
+        
+        <div class="section">
+            <h2>Personal Data</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="firstSurname">First Surname:</label>
+                <input type="text" id="firstSurname" placeholder="First Surname">
+            </div>
+            <div class="form-group">
+                <label for="secondSurname">Second Surname:</label>
+                <input type="text" id="secondSurname" placeholder="Second Surname">
+            </div>
+            <div class="form-group">
+                <label for="idType">ID Type:</label>
+                <select id="idType">
+                    <option value="Passport">Passport</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="idNumber">Passport Number:</label>
+                <input type="text" id="idNumber" placeholder="Passport Number">
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Birth Date:</label>
+                <input type="text" id="birthDate" placeholder="DD/MM/YYYY">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="Hombre">Male</option>
+                    <option value="Mujer">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nationality">Country:</label>
+                <select id="nationality">
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button id="generateBtn" class="btn-primary">Generate Random Data</button>
+            <button id="insertBtn" class="btn-primary">Insert Data</button>
+        </div>
+        
+        <div class="status" id="statusMessage"></div>
+    </div>
+    
+    <script src="utils/dataGenerator.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html> 
