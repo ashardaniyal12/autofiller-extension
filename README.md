@@ -1,4 +1,4 @@
-# SercoumFiller
+# Auto-filler-extenson Made With Cursor.ai Free trial
 
 An advanced browser extension designed to streamline form completion on Sercom platforms. This intelligent tool automatically generates and inserts realistic international demographic data, saving time and eliminating manual data entry errors.
 
