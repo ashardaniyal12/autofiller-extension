@@ -107,4 +107,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-*SercoumFiller: Developed with ❤️ for efficiency and reliability. Making data entry tasks simple and error-free.* 
+*Auto-filler-extension: Developed with ❤️ for efficiency and reliability. Making data entry tasks simple and error-free.* 
