@@ -2,7 +2,6 @@
 
 An advanced browser extension designed to streamline form completion on Sercom platforms. This intelligent tool automatically generates and inserts realistic international demographic data, saving time and eliminating manual data entry errors.
 
-![SercoumFiller](icons/icon128.png)
 
 ## 🌟 Key Features
 
